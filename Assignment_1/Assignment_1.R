@@ -13,21 +13,21 @@ rides$weekday = NULL
 
 #Frage 2: Es handelt sich um einen Dataframe
 # Der Unterschiede zu eine Matrix liegt daran, dass in einen Dataframe nicht 
-# alle Variablen den gleichen Type sein m¸ssen.
+# alle Variablen den gleichen Type sein m√ºssen.
 
 #Frage 3
 mean(rides$total_amount) #Mean = 15.59
 median(rides$total_amount) #Median = 11.16
 sd(rides$total_amount) #SD = 13.47
-# Diese Werte zeigen dass es viel kleinere Betr‰gen gibt, weil der Mdian tiefer als der Durschnitt liegt
-# Damit sind die wenig grossen Betr‰ge weiter entfernt der Median als die kleine Werte
-# Die Standardabweichung best‰tigt diese Hypothese, weil die SA grˆsser ist als der Median Wert 
+# Diese Werte zeigen dass es viel kleinere Betr√§gen gibt, weil der Mdian tiefer als der Durschnitt liegt
+# Damit sind die wenig grossen Betr√§ge weiter entfernt der Median als die kleine Werte
+# Die Standardabweichung best√§tigt diese Hypothese, weil die SA gr√∂sser ist als der Median Wert 
 # und es keinen negativen Werten gibt
 
 #Frage 4
 hist(rides$total_amount)
-# Die Verteilung best‰tigt die vorherige Hypothese, dass es weniger grossen Betr‰ge gibt, aber diese extrem hoch sein kˆnnen
-# Die meisten Betr‰ge befinden sich zwischen 0 und 20
+# Die Verteilung best√§tigt die vorherige Hypothese, dass es weniger grossen Betr√§ge gibt, aber diese extrem hoch sein k√∂nnen
+# Die meisten Betr√§ge befinden sich zwischen 0 und 20
 
 #Frage 5
 ncol(rides)
@@ -38,8 +38,8 @@ rides$trip_distance = NULL
 rides$trip_duration = NULL
 # Am meisten korreliert ist "Total_Amount" mit "trip_distance" und "trip_distance_miles", was Sinn ergibt da beide Variablen das gleiche Aussagen
 # Weiter ist die Korrelation mit "trip_duration" und "speed" relativ stark
-# Die Temperatur bewirkt auch eine negative Korrelation, was bedeutet dass Leuten wenn es kalt ist auch Taxis nehmen f¸r k¸rzeren Strecken.
-# Alle Werte, welche > 0,8 Korrelation aufwiesen wurden rausgenommen, um die sp‰teren Regressionen nicht zu schaden
+# Die Temperatur bewirkt auch eine negative Korrelation, was bedeutet dass Leuten wenn es kalt ist auch Taxis nehmen f√ºr k√ºrzeren Strecken.
+# Alle Werte, welche > 0,8 Korrelation aufwiesen wurden rausgenommen, um die sp√§teren Regressionen nicht zu schaden
 
 
 #Frage 6
